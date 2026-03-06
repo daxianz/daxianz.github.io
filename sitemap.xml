@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://daxianz.fun/posts/24caea6b.html</loc>
+    
+    <lastmod>2026-03-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://daxianz.fun/posts/af6f46c8.html</loc>
     
     <lastmod>2026-03-06</lastmod>
@@ -180,14 +189,14 @@
   </url>
   
   <url>
-    <loc>http://daxianz.fun/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <loc>http://daxianz.fun/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://daxianz.fun/tags/%E7%9E%8E%E6%8A%98%E8%85%BE/</loc>
+    <loc>http://daxianz.fun/tags/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
