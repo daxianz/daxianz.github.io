@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>博客之绑定域名</title>
+      <link href="/posts/1070ae9b.html"/>
+      <url>/posts/1070ae9b.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在将 Hexo 博客部署到 GitHub Pages 后，我们可以为博客绑定一个自定义域名。<br>在进行配置之前，建议先简单了解一些基础的网络概念，例如 服务器、IP 地址、DNS 解析、CDN 以及网站部署流程。这些知识有助于理解域名解析和网站访问的整体过程。</p><p>如果对这些概念还不太熟悉，可以先参考下面的视频进行简单了解：<br><a href="https://www.bilibili.com/video/BV18a4y1Y7e9?spm_id_from=333.788.videopod.episodes&vd_source=a32e6374d48972062934ef36b9c1b337&p=12">【合集完结】想上线网站？通俗易懂的网站上线部署发布教程</a></p><h2 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h2><p>见视频内容。</p><h2 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h2><p>在域名服务商的 DNS 管理页面添加解析记录。</p><ol><li><strong>CNAME 方式</strong>：<ul><li>添加一条 <code>CNAME</code> 记录：<ul><li><code>name</code>：<code>www</code></li><li><code>value</code>：<code>your-name.github.io</code></li><li><code>value</code>不同 DNS 面板叫法不同</li></ul></li><li>该记录会将 <code>www.yourdomain.com</code> 指向你的 GitHub Pages 地址。</li></ul></li><li><strong>A 记录方式</strong>：<ul><li>添加 4 条 <code>A</code> 记录，指向 GitHub Pages 的 IP：<ul><li><code>185.199.108.153</code></li><li><code>185.199.109.153</code></li><li><code>185.199.110.153</code></li><li><code>185.199.111.153</code></li></ul></li></ul></li></ol><h2 id="在博客项目中添加-CNAME-文件"><a href="#在博客项目中添加-CNAME-文件" class="headerlink" title="在博客项目中添加 CNAME 文件"></a>在博客项目中添加 CNAME 文件</h2><ol><li>在 <code>source/</code> 目录下新建一个名为 <code>CNAME</code> 的文件（<strong>注意全部大写且无后缀</strong>）。</li><li>在文件中写入购买好的域名：</li></ol><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">www.your-domain.com</span><br></pre></td></tr></table></figure><ol start="3"><li>保存后重新部署：</li></ol><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>DNS 解析生效通常需要几分钟到几小时，可通过 <code>ping yourdomain.com</code> 或在线 DNS 查询工具确认是否解析成功。等待 DNS 生效后，访问 <code>https://www.your-domain.com</code> 即可打开博客。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 瞎折腾 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo常用命令</title>
       <link href="/posts/24caea6b.html"/>
       <url>/posts/24caea6b.html</url>
