@@ -216,19 +216,19 @@
 <p>“网址前缀”验证很简单，输入你的域名(如：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://daxianz.fun)即可直接验证./">https://daxianz.fun)即可直接验证。</a></p>
 <p>“网域”验证较为复杂，点击“继续”后，操作如下：</p>
 <ol>
-<li>打开你的域名提供商网站，在里面添加“解析设置”，点击“添加记录”。以腾讯云为例：<br><img src="undefined" loading="lazy" data-original="https://dlink.host/wx2.sinaimg.cn/large/008E1Bgely8iaw1t0n0i8j31h20o279n.jpg" alt="腾讯云DNS解析设置1"></li>
-<li>“记录类型”选择“TXT”，“主机记录”选择“@”，记录值写入上面复制的TXT记录值。<br><img src="undefined" loading="lazy" data-original="https://dlink.host/wx4.sinaimg.cn/large/008E1Bgely8iaw1tc0z4cj31ac0a1abo.jpg" alt="腾讯云DNS解析设置2"></li>
-<li>重新部署后返回Google Search Console进行验证，可能需要等待一段时间。入口为“设置”-&gt;“所有权验证”:<br><img src="undefined" loading="lazy" data-original="https://dlink.host/wx2.sinaimg.cn/large/008E1Bgely8iaw1tjr5qrj31hb0o9juw.jpg" alt="GSC网站所有权验证1"><br>此处又分为两种验证方式：<ul>
-<li><p>下载个 HTML 文件然后放在站点目录下的 source 中，然后推送到服务器<br><img src="undefined" loading="lazy" data-original="https://dlink.host/wx1.sinaimg.cn/large/008E1Bgely8iaw1ts396aj31200f03zs.jpg" alt="GSC网站所有权验证2"></p>
+<li>打开你的域名提供商网站，在里面添加“解析设置”，点击“添加记录”。以腾讯云为例：<br><img src="https://dlink.host/wx1.sinaimg.cn/large/008E1Bgely8hxcfjl10r5g30go0b4dhy.gif" data-original="undefined" loading="lazy" alt="腾讯云DNS解析设置1"></li>
+<li>“记录类型”选择“TXT”，“主机记录”选择“@”，记录值写入上面复制的TXT记录值。<br><img src="https://dlink.host/wx1.sinaimg.cn/large/008E1Bgely8hxcfjl10r5g30go0b4dhy.gif" data-original="undefined" loading="lazy" alt="腾讯云DNS解析设置2"></li>
+<li>重新部署后返回Google Search Console进行验证，可能需要等待一段时间。入口为“设置”-&gt;“所有权验证”:<br><img src="https://dlink.host/wx1.sinaimg.cn/large/008E1Bgely8hxcfjl10r5g30go0b4dhy.gif" data-original="undefined" loading="lazy" alt="GSC网站所有权验证1"><br>此处又分为两种验证方式：<ul>
+<li><p>下载个 HTML 文件然后放在站点目录下的 source 中，然后推送到服务器<br><img src="https://dlink.host/wx1.sinaimg.cn/large/008E1Bgely8hxcfjl10r5g30go0b4dhy.gif" data-original="undefined" loading="lazy" alt="GSC网站所有权验证2"></p>
 </li>
-<li><p>把 content 中的字符串复制到主题配置文件_config.butterfly.yml对应内容中：<br><img src="undefined" loading="lazy" data-original="https://dlink.host/wx2.sinaimg.cn/large/008E1Bgely8iaw1u3bjgnj311n0f1768.jpg" alt="GSC网站所有权验证3"></p>
+<li><p>把 content 中的字符串复制到主题配置文件_config.butterfly.yml对应内容中：<br><img src="https://dlink.host/wx1.sinaimg.cn/large/008E1Bgely8hxcfjl10r5g30go0b4dhy.gif" data-original="undefined" loading="lazy" alt="GSC网站所有权验证3"></p>
    <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">site_verification:</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">google-site-verification</span></span><br><span class="line">    <span class="attr">content:</span> <span class="comment"># 在这里填上面的字符串</span></span><br><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">baidu-site-verification</span></span><br><span class="line">    <span class="attr">content:</span> <span class="string">XXXXX</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
 </ol>
 <h2 id="必应收录"><a href="#必应收录" class="headerlink" title="必应收录"></a>必应收录</h2><p>必应收录也是很简单，点击<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.bing.com/webmasters/">必应站长</a>。先注册登录，必应收录有两种方式，一种使用刚刚谷歌导入过去，第二种是就是自己添加 URL。</p>
 <h2 id="百度收录"><a href="#百度收录" class="headerlink" title="百度收录"></a>百度收录</h2><h3 id="网站验证"><a href="#网站验证" class="headerlink" title="网站验证"></a>网站验证</h3><p>先去注册并登录：<a target="_blank" rel="noopener external nofollow noreferrer" href="https://ziyuan.baidu.com/?castk=LTE=">百度站长平台</a><br>首先需要验证网站，我选择的是 <code>https://</code>，这根据你前面是否添加 SSL 证书来选择。并且我使用的是不带 www 的，看个人。然后到第三步，我使用的 HTML 标签验证。</p>
-<p><img src="undefined" loading="lazy" data-original="https://dlink.host/wx1.sinaimg.cn/large/008E1Bgely8iaw1vi8nrpj30mh06zdg9.jpg" alt="百度收录HTML标签验证"></p>
+<p><img src="https://dlink.host/wx1.sinaimg.cn/large/008E1Bgely8hxcfjl10r5g30go0b4dhy.gif" data-original="undefined" loading="lazy" alt="百度收录HTML标签验证"></p>
 <p>把<code>content</code>中的字符串复制到主题配置文件<code>_config.butterfly.yml</code>中的 <code>baidu_site_verification</code>。</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Baidu Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: https://ziyuan.baidu.com/site</span></span><br><span class="line"><span class="attr">site_verification:</span></span><br><span class="line">  <span class="comment"># - name: google-site-verification</span></span><br><span class="line">  <span class="comment">#   content: xxxxxx</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">baidu-site-verification</span></span><br><span class="line">    <span class="attr">content:</span>  <span class="comment"># 在这里填上面的字符串</span></span><br></pre></td></tr></table></figure>
 
@@ -245,7 +245,7 @@
 <li>host为自己网站的域名，例如我的为<a href="https://daxianz.fun/">https://daxianz.fun</a></li>
 <li>token需要打开“普通收录–&gt;推送接口”进行查看</li>
 </ul>
-<p><img src="undefined" loading="lazy" data-original="https://dlink.host/wx1.sinaimg.cn/large/008E1Bgely8iaw1ulgvrhj30yn08cmya.jpg" alt="百度收录-普通收录-推送接口"></p>
+<p><img src="https://dlink.host/wx1.sinaimg.cn/large/008E1Bgely8hxcfjl10r5g30go0b4dhy.gif" data-original="undefined" loading="lazy" alt="百度收录-普通收录-推送接口"></p>
 <p>其次，记得查看hexo根目录中<code>_config.yml</code>文件中 url 的值， 必须包含是百度站长平台注册的域名。<br>最后，在<code>_config.yml</code>文件中的<code>deploy</code>加入新的<code>type</code>:</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">    <span class="attr">repository:</span> <span class="string">https://github.com/fenshen000/fenshen000.github.io.git</span></span><br><span class="line">    <span class="attr">branch:</span> <span class="string">main</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">baidu_url_submitter</span></span><br></pre></td></tr></table></figure>
 <blockquote>
@@ -259,7 +259,7 @@
 <p>若要实现手动提交，则把下面的代码粘贴到百度站长平台的“手动收录”地址窗口即可：</p>
 <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://你的域名/sitemap.xml</span><br><span class="line">https://你的域名/baidusitemap.xml</span><br></pre></td></tr></table></figure>
 
-<p><img src="undefined" loading="lazy" data-original="https://dlink.host/wx3.sinaimg.cn/large/008E1Bgely8iaw1v6cskcj30zb0d0gmk.jpg" alt="百度收录-手动收录"></p>
+<p><img src="https://dlink.host/wx1.sinaimg.cn/large/008E1Bgely8hxcfjl10r5g30go0b4dhy.gif" data-original="undefined" loading="lazy" alt="百度收录-手动收录"></p>
 <p>后续慢慢等收录吧，百度收录比较慢。</p>
 <h2 id="添加nofollow标签"><a href="#添加nofollow标签" class="headerlink" title="添加nofollow标签"></a>添加nofollow标签</h2><p>nofollow，即免责声明。<br>给非友情链接的出站链接添加「nofollow」标签，nofollow 标签是由谷歌领头创新的一个「反垃圾链接」的标签，并被百度、yahoo 等各大搜索引擎广泛支持，引用 nofollow 标签的目的是：用于指示搜索引擎不要追踪（即抓取）博客网页上的带有 nofollow 属性的任何出站链接，以减少垃圾链接的分散网站权重。</p>
 <p><strong>1. 安装插件 <code>filter-nofollow</code> ：</strong></p>
